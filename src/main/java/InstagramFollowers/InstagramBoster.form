@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="InstagramFollowers.InstagramBoster">
+  <grid id="b60bf" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="449" y="116" width="864" height="495"/>
+    </constraints>
+    <properties/>
+    <border type="empty"/>
+    <children>
+      <grid id="27dc6" binding="InstagramBoster" layout-manager="GridLayoutManager" row-count="6" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="Center"/>
+        <properties>
+          <background color="-3947581"/>
+          <font name="Bahnschrift" size="18" style="0"/>
+          <foreground color="-4473925"/>
+          <inheritsPopupMenu value="true"/>
+          <minimumSize width="650" height="300"/>
+          <opaque value="true"/>
+          <requestFocusEnabled value="true"/>
+          <verifyInputWhenFocusTarget value="true"/>
+          <visible value="true"/>
+        </properties>
+        <border type="empty" title="InstagramBooster" title-justification="2">
+          <font/>
+          <title-color color="-4473925"/>
+          <color color="-12828863"/>
+        </border>
+        <children>
+          <component id="c898" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Bahnschrift" size="28" style="1"/>
+              <foreground color="-12367507"/>
+              <text value="Login"/>
+            </properties>
+          </component>
+          <component id="f0a7d" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Bahnschrift" size="24" style="0"/>
+              <foreground color="-12367507"/>
+              <text value="Password"/>
+            </properties>
+          </component>
+          <component id="36029" class="javax.swing.JPasswordField" binding="passwordField1" default-binding="true">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="307" height="30"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-4934476"/>
+              <caretColor color="-15455167"/>
+              <editable value="true"/>
+              <enabled value="true"/>
+              <focusTraversalPolicyProvider value="false"/>
+              <focusable value="true"/>
+              <font name="Bahnschrift" size="18" style="0"/>
+              <foreground color="-12367507"/>
+            </properties>
+          </component>
+          <component id="6852d" class="javax.swing.JTextField" binding="loginTextField1">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="307" height="30"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-4934476"/>
+              <font name="Bahnschrift" size="18"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="9608c" class="javax.swing.JTextArea" binding="Log">
+            <constraints>
+              <grid row="1" column="2" row-span="4" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-4934476"/>
+              <editable value="false"/>
+              <enabled value="true"/>
+              <focusable value="false"/>
+              <font name="Bahnschrift" size="12"/>
+              <foreground color="-12367507"/>
+              <lineWrap value="false"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="2d81b" class="javax.swing.JLabel" binding="LogLable">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Bahnschrift" size="28" style="1"/>
+              <foreground color="-12367507"/>
+              <text value="Log"/>
+            </properties>
+          </component>
+          <component id="e6c23" class="javax.swing.JButton" binding="startButton" default-binding="true">
+            <constraints>
+              <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="110" height="44"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-4934476"/>
+              <enabled value="false"/>
+              <font name="Bahnschrift" size="18" style="0"/>
+              <foreground color="-12367507"/>
+              <text value="Start"/>
+            </properties>
+          </component>
+          <component id="9315e" class="javax.swing.JButton" binding="SettingsButton">
+            <constraints>
+              <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="110" height="44"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-4934476"/>
+              <enabled value="true"/>
+              <font name="Bahnschrift" size="18" style="0"/>
+              <foreground color="-12367507"/>
+              <text value="Settings"/>
+            </properties>
+          </component>
+          <component id="d2e12" class="javax.swing.JButton" binding="likesButton" default-binding="true">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="101" height="77"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-4934476"/>
+              <font name="Bahnschrift" size="18"/>
+              <foreground color="-12367507"/>
+              <hideActionText value="false"/>
+              <requestFocusEnabled value="true"/>
+              <text value="Likes"/>
+            </properties>
+          </component>
+          <component id="d27e7" class="javax.swing.JButton" binding="subscribesButton" default-binding="true">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="101" height="77"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-4934476"/>
+              <font name="Bahnschrift" size="18" style="0"/>
+              <foreground color="-12367507"/>
+              <text value="Subscribes"/>
+            </properties>
+          </component>
+          <component id="d46f4" class="javax.swing.JButton" binding="comentsButton" default-binding="true">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="101" height="77"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-4934476"/>
+              <enabled value="true"/>
+              <font name="Bahnschrift" size="18" style="0"/>
+              <foreground color="-12367507"/>
+              <horizontalTextPosition value="0"/>
+              <text value="Coments"/>
+              <verticalAlignment value="0"/>
+              <verticalTextPosition value="0"/>
+            </properties>
+          </component>
+          <component id="ab478" class="javax.swing.JButton" binding="loginButton" default-binding="true">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="7" anchor="5" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="55" height="55"/>
+              </grid>
+            </constraints>
+            <properties>
+              <alignmentX value="0.5"/>
+              <autoscrolls value="false"/>
+              <background color="-4934476"/>
+              <borderPainted value="true"/>
+              <contentAreaFilled value="true"/>
+              <font name="Bahnschrift" size="18"/>
+              <foreground color="-12367507"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="Login"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+  <inspectionSuppressions>
+    <suppress inspection="FormSpellChecking" id="27dc6"/>
+  </inspectionSuppressions>
+</form>
