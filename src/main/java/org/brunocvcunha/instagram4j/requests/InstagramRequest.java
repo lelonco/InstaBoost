@@ -66,7 +66,7 @@ public abstract class InstagramRequest<T> {
      * @throws IOException 
      * @throws ClientProtocolException 
      */
-    public abstract T execute() throws ClientProtocolException, IOException;
+    public abstract T execute() throws Exception;
     
     /**
      * Process response

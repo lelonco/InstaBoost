@@ -157,6 +157,7 @@
               <font name="Bahnschrift" size="18" style="0"/>
               <foreground color="-12367507"/>
               <text value="Subscribes"/>
+              <visible value="false"/>
             </properties>
           </component>
           <component id="d46f4" class="javax.swing.JButton" binding="comentsButton" default-binding="true">
@@ -174,6 +175,7 @@
               <text value="Coments"/>
               <verticalAlignment value="0"/>
               <verticalTextPosition value="0"/>
+              <visible value="false"/>
             </properties>
           </component>
           <component id="ab478" class="javax.swing.JButton" binding="loginButton" default-binding="true">

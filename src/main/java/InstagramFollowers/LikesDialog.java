@@ -7,8 +7,8 @@ public class LikesDialog extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
-    private JCheckBox likeHashtagFeedCheckbox;
-    private JCheckBox likeUsersInHashtagFeedCheckbox;
+    public JCheckBox likeHashtagFeedCheckbox;
+    public JCheckBox likeUsersInHashtagFeedCheckbox;
     private JTextField DelayTextField;
     private JTextField countOfLikesForTextField;
     private JCheckBox follownLikeCheckbox;
@@ -19,6 +19,26 @@ public class LikesDialog extends JDialog {
     private String hastag="";
     private InstagramBoster main;
 
+    public JCheckBox getLikeHashtagFeedCheckbox() {
+        return likeHashtagFeedCheckbox;
+    }
+
+    public JCheckBox getLikeUsersInHashtagFeedCheckbox() {
+        return likeUsersInHashtagFeedCheckbox;
+    }
+
+    public JTextField getDelayTextField() {
+        return DelayTextField;
+    }
+
+    public JTextField getCountOfLikesForTextField() {
+        return countOfLikesForTextField;
+    }
+
+    public JCheckBox getFollownLikeCheckbox() {
+        return follownLikeCheckbox;
+    }
+
     public LikesDialog(final InstagramBoster main) {
         this.main=main;
         //System.exit(0);
@@ -26,30 +46,24 @@ public class LikesDialog extends JDialog {
         setContentPane(contentPane);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
-        buttonOK.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                main.setLikeHashTagFeed(likeHashtagFeedCheckbox.isSelected());
-                main.setLikeFeedUsersHashTag(likeUsersInHashtagFeedCheckbox.isSelected());
-                main.setFollownLike(follownLikeCheckbox.isSelected());
-                main.setDelay(DelayTextField.getText());
-                main.setCountLikes(countOfLikesForTextField.getText());
-                main.setHashTag(hastagTextField.getText());
-                if (follownLikeCheckbox.isSelected()) {
-                    main.getSubscribesButton().setEnabled(false);
-                }
-                else
-                {
-                    main.getSubscribesButton().setEnabled(true);
-                }
-                onOK();
+        buttonOK.addActionListener(e -> {
+            main.setLikeHashTagFeed(likeHashtagFeedCheckbox.isSelected());
+            main.setLikeFeedUsersHashTag(likeUsersInHashtagFeedCheckbox.isSelected());
+            main.setFollownLike(follownLikeCheckbox.isSelected());
+            main.setDelay(DelayTextField.getText());
+            main.setCountLikes(countOfLikesForTextField.getText());
+//            main.setHashTag(hastagTextField.getText());
+            if (follownLikeCheckbox.isSelected()) {
+                main.getSubscribesButton().setEnabled(false);
             }
+            else
+            {
+                main.getSubscribesButton().setEnabled(true);
+            }
+            onOK();
         });
 
-        buttonCancel.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                onCancel();
-            }
-        });
+        buttonCancel.addActionListener(e -> onCancel());
 
         // call onCancel() when cross is clicked
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);

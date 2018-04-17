@@ -2,7 +2,6 @@ package InstagramFollowers;
 
 import org.brunocvcunha.instagram4j.Instagram4j;
 import org.brunocvcunha.instagram4j.requests.InstagramUploadPhotoRequest;
-import org.brunocvcunha.instagram4j.requests.internal.InstagramConfigurePhotoRequest;
 import org.brunocvcunha.instagram4j.requests.payload.InstagramConfigurePhotoResult;
 
 import java.io.File;
@@ -18,8 +17,7 @@ public class Autoposting {
         this.instagram=instagram4j;
     }*/
 
-    public void start(Instagram4j instagram)throws IOException, InterruptedException
-    {
+    public void start(Instagram4j instagram) throws Exception {
 //        String login, passWord;
 //        login ="2disreal";
 //        passWord ="987456987";
@@ -56,8 +54,7 @@ public class Autoposting {
         File pathFile=new File(folder,file.getName());
         file.renameTo(pathFile);
     }
-    public void PostPhoto(Instagram4j instagram,String photoName,String description)throws IOException, InterruptedException
-    {
+    public void PostPhoto(Instagram4j instagram,String photoName,String description) throws Exception {
         File photo=new File(photoName);
        InstagramConfigurePhotoResult postResult=instagram.sendRequest(new InstagramUploadPhotoRequest(photo,description));
        if(postResult.getUpload_id()!=null)
@@ -82,6 +79,8 @@ class AutopostingThread extends Thread
         } catch (IOException e) {
             e.printStackTrace();
         } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

@@ -4,6 +4,7 @@ import org.apache.http.client.CookieStore;
 import org.brunocvcunha.instagram4j.Instagram4j;
 
 import java.io.*;
+import java.util.Arrays;
 
 public class AutoLoad {
     Instagram4j instagram;
@@ -24,5 +25,26 @@ public class AutoLoad {
                 .build();
         instagram.setup();
          return instagram;
+    }
+    public void autoLoadSettings() throws IOException, ClassNotFoundException {
+        InstagramBoster main = new InstagramBoster();
+        LikesDialog likesDialog=new LikesDialog(main);
+        File settings= new File("Setting");
+        ObjectInputStream ois=new ObjectInputStream(new FileInputStream(settings));
+        String settingsStr=(String)ois.readObject();
+        String [] arrSetting=settingsStr.split(";");
+        System.out.println(arrSetting.length);
+/*        main.setLikeHashTagFeed(Boolean.parseBoolean(arrSetting[0]));
+        main.setLikeFeedUsersHashTag(Boolean.parseBoolean(arrSetting[1]));
+        main.setFollownLike(Boolean.parseBoolean(arrSetting[2]));
+        main.setDelay(arrSetting[3]);
+        main.setCountLikes(arrSetting[4]);*/
+        likesDialog.getLikeHashtagFeedCheckbox().setSelected(Boolean.parseBoolean(arrSetting[0]));
+        likesDialog.getLikeUsersInHashtagFeedCheckbox().setSelected(Boolean.parseBoolean(arrSetting[1]));
+        likesDialog.getFollownLikeCheckbox().setSelected(Boolean.parseBoolean(arrSetting[2]));
+        likesDialog.getDelayTextField().setText(arrSetting[3]);
+        likesDialog.getCountOfLikesForTextField().setText(arrSetting[4]);
+        System.out.println(Arrays.toString(arrSetting));
+       // System.out.println(settingsStr);
     }
 }

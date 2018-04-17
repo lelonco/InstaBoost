@@ -23,8 +23,10 @@ public class FollowDialog extends JDialog {
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 main.setFollowEnable(enableCheckBox.isSelected());
+
                 onOK();
             }
+
         });
 
         buttonCancel.addActionListener(new ActionListener() {
@@ -60,9 +62,9 @@ public class FollowDialog extends JDialog {
     }
 
     public static void main(String[] args) {
-        FollowDialog dialog = new FollowDialog();
-        dialog.pack();
-        dialog.setVisible(true);
-        System.exit(0);
+//        FollowDialog dialog = new FollowDialog(this);
+//        dialog.pack();
+//        dialog.setVisible(true);
+//        System.exit(0);
     }
 }

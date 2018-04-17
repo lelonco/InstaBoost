@@ -68,7 +68,7 @@ public class InstagramUploadVideoRequest extends InstagramRequest<StatusResult> 
     }
     
     @Override
-    public StatusResult execute() throws ClientProtocolException, IOException {
+    public StatusResult execute() throws Exception {
         
         HttpPost post = createHttpRequest();
         
@@ -169,7 +169,7 @@ public class InstagramUploadVideoRequest extends InstagramRequest<StatusResult> 
      * @throws ClientProtocolException
      * @throws IOException
      */
-    protected HttpEntity createMultipartEntity(String uploadId) throws ClientProtocolException, IOException {
+    protected HttpEntity createMultipartEntity(String uploadId) throws Exception {
         MultipartEntityBuilder builder = MultipartEntityBuilder.create();
         builder.addTextBody("upload_id", uploadId);
         builder.addTextBody("_uuid", api.getUuid());

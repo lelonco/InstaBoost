@@ -12,6 +12,15 @@ public class CommentDialog extends JDialog {
     private JButton loadButton;
     private JTextField delayTextField;
     private InstagramBoster main;
+
+    public JTextField getOtherHashTags() {
+        return OtherHashTags;
+    }
+
+    public void setOtherHashTags(JTextField otherHashTags) {
+        OtherHashTags = otherHashTags;
+    }
+
     public CommentDialog(final InstagramBoster main) {
         this.main=main;
         setSize(450,300);
@@ -23,7 +32,7 @@ public class CommentDialog extends JDialog {
             public void actionPerformed(ActionEvent e) {
                 main.setComents("");
                 main.setComentsEnable(CommentsPhotos.isSelected());
-                main.setOtherHashtags(OtherHashTags.isS);
+//                main.setOtherHashtags(OtherHashTags.getText());
                 onOK();
             }
         });
@@ -61,9 +70,9 @@ public class CommentDialog extends JDialog {
     }
 
     public static void main(String[] args) {
-        CommentDialog dialog = new CommentDialog();
-        dialog.pack();
-        dialog.setVisible(true);
-        System.exit(0);
+//        CommentDialog dialog = new CommentDialog(this);
+//        dialog.pack();
+//        dialog.setVisible(true);
+//        System.exit(0);
     }
 }

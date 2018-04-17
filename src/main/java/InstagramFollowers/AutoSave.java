@@ -18,14 +18,14 @@ public class AutoSave {
         oos.close();
         los.close();
     }
-    public void autoSaveSattings(Instagram4j instagram, boolean likeHashTagFeed, boolean likeFeedUsersHashTag, boolean follownLike, int delay, int countLikes,
-        boolean followEnable,String hashTag,
-     boolean comentsEnable ,boolean otherHashtags,/* String hashTag,*/ String coments)throws IOException
+    public void autoSaveSattings(Instagram4j instagram, boolean likeHashTagFeed, boolean likeFeedUsersHashTag, boolean follownLike, int delay, int countLikes
+        /*boolean followEnable,String hashTag,
+     boolean comentsEnable ,boolean otherHashtags,*//* String hashTag,*//* String coments*/)throws IOException
     {
         File settings= new File("Setting");
         ObjectOutputStream os=new ObjectOutputStream(new FileOutputStream(settings));
         os.writeObject(likeHashTagFeed+";"+ likeFeedUsersHashTag+";"+ follownLike+";"+ delay+";"+ countLikes
-                +";"+ followEnable +";"+ hashTag+";"+ otherHashtags+";"+ coments);
+           /*     +";"+ followEnable +";"+ hashTag+";"+ otherHashtags+";"+ coments*/);
 
     }
 }

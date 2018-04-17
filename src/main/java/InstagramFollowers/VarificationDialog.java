@@ -2,7 +2,6 @@ package InstagramFollowers;
 
 import javax.swing.*;
 import java.awt.event.*;
-import java.io.IOException;
 
 public class VarificationDialog extends JDialog {
     private JPanel contentPane;
@@ -31,9 +30,7 @@ public class VarificationDialog extends JDialog {
             public void actionPerformed(ActionEvent e) {
                 try {
                     onOK();
-                } catch (IOException e1) {
-                    e1.printStackTrace();
-                } catch (InterruptedException e1) {
+                } catch (Exception e1) {
                     e1.printStackTrace();
                 }
             }
@@ -55,8 +52,7 @@ public class VarificationDialog extends JDialog {
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
     }
 
-    private void onOK()throws IOException, InterruptedException
-    {
+    private void onOK() throws Exception {
         mainProgramm loginTwoFactor=new mainProgramm();
        /* JTextField login =main.getLogin();
         JTextField password = main.getPass();*/

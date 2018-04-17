@@ -35,7 +35,7 @@ public class mainProgramm {
         long diff=System.currentTimeMillis();
         return (60-(diff / (60 * 1000) % 60))*60000;
     }
-    public static List<Long> getAllPostsTagFeed(Instagram4j instagram, String tagName) throws IOException, InterruptedException //FIND ALL PICTURES FROM TAG
+    public static List<Long> getAllPostsTagFeed(Instagram4j instagram, String tagName) throws Exception //FIND ALL PICTURES FROM TAG
     {
         List<Long> postsId=new ArrayList<>();
         int limit=randomIntBetween(100,500);
@@ -51,8 +51,7 @@ public class mainProgramm {
         }
         return (postsId);
     }
-    public static List<InstagramFeedItem> getAllTagFeedItems(Instagram4j instagram, String tagName)throws IOException, InterruptedException
-    {
+    public static List<InstagramFeedItem> getAllTagFeedItems(Instagram4j instagram, String tagName) throws Exception {
         String nextMaxId = "";
         List<InstagramFeedItem> items = new ArrayList<InstagramFeedItem>();
         int count = 0;
@@ -70,7 +69,7 @@ public class mainProgramm {
         }
         return items;
     }
-    public static List<Long> getAllUsersTagFeed(Instagram4j instagram, String tagName) throws IOException, InterruptedException //FIND ALL USERS FROM TAG
+    public static List<Long> getAllUsersTagFeed(Instagram4j instagram, String tagName) throws Exception //FIND ALL USERS FROM TAG
     {
         List<Long> usersId=new ArrayList<>();
         while (true) {
@@ -97,7 +96,7 @@ public class mainProgramm {
           Thread.sleep(timeToHour());
       }
   }
-    public static ArrayList<Long> getUserFollowers(Instagram4j instagram, long userID)throws IOException, InterruptedException {
+    public static ArrayList<Long> getUserFollowers(Instagram4j instagram, long userID) throws Exception {
         ArrayList<Long> usersId = new ArrayList<>();
         String nextMaxId = "";
         while(true) {
@@ -113,8 +112,7 @@ public class mainProgramm {
         }
         return (usersId);
     }
-    public static ArrayList<Long> getUserFollowing(Instagram4j instagram, long userID)throws IOException, InterruptedException
-    {
+    public static ArrayList<Long> getUserFollowing(Instagram4j instagram, long userID) throws Exception {
         ArrayList<Long> followingId= new ArrayList<>();
         String nextMaxId = "";
         while (true) {
@@ -131,8 +129,7 @@ public class mainProgramm {
         }
         return (followingId);
     }
-    public static List<Long> whoNotFollowU(Instagram4j instagram)throws IOException, InterruptedException
-    {
+    public static List<Long> whoNotFollowU(Instagram4j instagram) throws Exception {
         List<Long> unfollowList=new ArrayList<>();
         for(long user:getUserFollowing(instagram,instagram.getUserId()))
         {
@@ -159,8 +156,7 @@ public class mainProgramm {
         }
         return searchW;
     }
-    public static List<InstagramFeedItem> getUserPosts(Instagram4j instagram, long userId)throws IOException, InterruptedException
-    {
+    public static List<InstagramFeedItem> getUserPosts(Instagram4j instagram, long userId) throws Exception {
         String nextMaxId= "";
         int limit=10;
         List<InstagramFeedItem> userPosts=new ArrayList<>();
@@ -187,7 +183,7 @@ public class mainProgramm {
         return postsId;
     }
     /*************************************************************LIKES**************************************************************/
-    public void likeFeedUsersHashTag(Instagram4j instagram, List<String> search , int countLikes, int delay)throws IOException, InterruptedException//Like peoples feed in hash tag
+    public void likeFeedUsersHashTag(Instagram4j instagram, List<String> search , int countLikes, int delay) throws Exception//Like peoples feed in hash tag
     {
         for (String s : search) {
             if (!isHashtag) {
@@ -205,7 +201,7 @@ public class mainProgramm {
             }
         }
     }
-    public static void likePosts(Instagram4j instagram, List<Long> postId, int delay) throws IOException, InterruptedException/////////////////////////Like users PICTURES
+    public static void likePosts(Instagram4j instagram, List<Long> postId, int delay) throws Exception/////////////////////////Like users PICTURES
     {
         for (long feedResult : postId) {
             InstagramLikeResult likeResult= instagram.sendRequest(new InstagramLikeRequest(feedResult));
@@ -224,8 +220,7 @@ public class mainProgramm {
         }
     }
 
-    public void likeTagFeedAndUser(Instagram4j instagram, List<String> search, int countLike, int delay, boolean doFollow)throws IOException, InterruptedException
-    {
+    public void likeTagFeedAndUser(Instagram4j instagram, List<String> search, int countLike, int delay, boolean doFollow) throws Exception {
         for (String tagName : search) {
             if (isHashtag) {
                 int limit=randomIntBetween(50,500);
@@ -268,8 +263,7 @@ public class mainProgramm {
         }
     }
     /*************************************************************FOLLOW/UNFOLLOW**************************************************************/
-    public static void unfolowUsers(Instagram4j instagram, List<Long> usersId )throws IOException, InterruptedException
-    {
+    public static void unfolowUsers(Instagram4j instagram, List<Long> usersId ) throws Exception {
         System.out.println("OK");
         for(long user:usersId) {
             StatusResult result=instagram.sendRequest(new InstagramUnfollowRequest(user));
@@ -284,8 +278,7 @@ public class mainProgramm {
             }
         }
     }
-    public static void followUsers(Instagram4j instagram, List<Long> usersId, int delay)throws IOException, InterruptedException
-    {
+    public static void followUsers(Instagram4j instagram, List<Long> usersId, int delay) throws Exception {
         for(long user:usersId) {
 
             instagram.sendRequest(new InstagramFollowRequest(user));
@@ -293,15 +286,13 @@ public class mainProgramm {
             Thread.sleep(randomLongBetween(delay, delay+30));
         }
     }
-    public static void followUser(Instagram4j instagram, long usersId)throws IOException, InterruptedException
-    {
+    public static void followUser(Instagram4j instagram, long usersId) throws Exception {
         StatusResult result=instagram.sendRequest(new InstagramFollowRequest(usersId));
         doSubs++;
         checkLimits();
         System.out.println("Followed:" + usersId);
     }
-    public void followAndLikePreparation(Instagram4j instagram, List<String> search, int countLikes, int delay)throws IOException, InterruptedException
-    {
+    public void followAndLikePreparation(Instagram4j instagram, List<String> search, int countLikes, int delay) throws Exception {
         for (String s : search) {
                 if (!isHashtag) {
                     InstagramSearchUsernameResult user = instagram.sendRequest(new InstagramSearchUsernameRequest(s));
@@ -321,15 +312,13 @@ public class mainProgramm {
             }
 
     }
-    public void followAndLikeAction(Instagram4j instagram, long userId , int countLikes, int delay)throws IOException, InterruptedException
-    {
+    public void followAndLikeAction(Instagram4j instagram, long userId , int countLikes, int delay) throws Exception {
         followUser(instagram,userId);
         likePosts(instagram,getPostsId(instagram,getUserPosts(instagram,userId)),delay);
         Thread.sleep(delay);
     }
     /*************************************************************LOGIN**************************************************************/
-    public  Instagram4j tryLogin(String login, String password)throws IOException, InterruptedException
-    {
+    public  Instagram4j tryLogin(String login, String password) throws Exception {
         main=new InstagramBoster();
         InstagramLoginResult loginRes;
         InstagramTwoFactorInfo info;
@@ -347,21 +336,20 @@ public class mainProgramm {
         }
         return instagram;
     }
-    public  Instagram4j tryTwoFactorLogin(String login, String password, String vatificationCode)throws IOException, InterruptedException
-    {
+    public  Instagram4j tryTwoFactorLogin(String login, String password, String vatificationCode) throws Exception {
         Instagram4j instagram = Instagram4j.builder().username(login).password(password).build();
         instagram.setup();
         instagram.login(vatificationCode);
         return instagram;
     }
     public void start(Instagram4j instagram, String login, String pass, boolean likeHashTagFeed, boolean likeFeedUsersHashTag, boolean follownLike, int delay, int countLikes,
-                      boolean followEnable,String hashTag,
-     boolean comentsEnable ,boolean otherHashtags,/* String hashTag,*/ String coments)throws IOException
-    {
+                      /*boolean followEnable*/String hashTag
+/*     boolean comentsEnable ,boolean otherHashtags,*//* String hashTag,*//* String coments*/) throws Exception {
        /* Instagram4j instagram = Instagram4j.builder().username(login).password(pass).build();
         instagram.setup();*/
        AutoSave autoSave=new AutoSave();
        autoSave.autoSaveLogin(instagram,login,pass);
+       autoSave.autoSaveSattings(instagram,likeHashTagFeed,likeFeedUsersHashTag,follownLike,delay,countLikes);
         System.out.println("OK");
         System.out.println("Login"+login+"Pass"+pass+"likeFeed"+likeHashTagFeed+"likeFeed+users"+likeFeedUsersHashTag+"follow+like"+follownLike+"delay"+delay+"count lke "+countLikes);
         List<String> search=isHashtag(new LoadHashTags().load());
@@ -413,7 +401,7 @@ public class mainProgramm {
         // boolean comentsEnable,boolean otherHashtags, String hashTag, String coments);
     }
 
-    public static void main(String[] args) throws IOException, InterruptedException, ClassNotFoundException {
+    public static void main(String[] args) throws Exception {
       /*  ObjectInputStream ois = new ObjectInputStream(new FileInputStream(cookiesFile));
         CookieStore cookieStore = (CookieStore) ois.readObject();
         ois.close();*/
@@ -433,24 +421,23 @@ public class mainProgramm {
             app.getPass().setText(temp[1]);
             app.getStartButton().setEnabled(true);
             app.getLoginButton().setEnabled(false);
+            autoLoad.autoLoadSettings();
         }
         app.setVisible(true);
         /////////////////////////LOGIN/////////////////////////
-         String login, passWord;
-         login ="2disreal";
-         passWord ="987456987";
-//         List<Long> list=new ArrayList<>();
-        Instagram4j instagram = autoLoad.autoLoadLogin();
-        instagram.setup();
-        instagram.login();
-          new LikeAllNewPhotos().likeAllNewFollowersPhotos(instagram,(5*1000));
+//         String login, passWord;
+//         login ="2disreal";
+//         passWord ="987456987";
+////         List<Long> list=new ArrayList<>();
+//        Instagram4j instagram = autoLoad.autoLoadLogin();
+//        instagram.setup();
+//        instagram.login();
+//          new LikeAllNewPhotos().likeAllNewFollowersPhotos(instagram,(5*1000));
 /*        unfolowUsers(instagram,whoNotFollow(instagram, instagram.sendRequest(new InstagramSearchUsernameRequest(login)).getUser().getPk()));*/
 //        AutopostingThread autopostingThread=new AutopostingThread();
 //        autopostingThread.start();
       //  start(instagram,login,passWord,true,true,true,5000,5,"followme");
 
-       // stories.setSeen(1);
-        //System.out.println("Is seen"+stories.getSeen());
 
     }
 }

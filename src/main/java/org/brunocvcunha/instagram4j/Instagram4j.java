@@ -158,7 +158,7 @@ public class Instagram4j {
      * @throws IOException 
      * @throws ClientProtocolException 
      */
-    public InstagramLoginResult login() throws ClientProtocolException, IOException {
+    public InstagramLoginResult login() throws Exception {
 
         log.info("Logging with user " + username + " and password " + password.replaceAll("[a-zA-Z0-9]", "*"));
 
@@ -199,7 +199,7 @@ public class Instagram4j {
         return loginResult;
     }
 
-    public InstagramLoginResult login(String verificationCode) throws ClientProtocolException, IOException {
+    public InstagramLoginResult login(String verificationCode) throws Exception {
         if (identifier == null) {
             login();
         }
@@ -234,7 +234,7 @@ public class Instagram4j {
      * @throws ClientProtocolException
      * @throws IOException
      */
-    public String getOrFetchCsrf() throws ClientProtocolException, IOException {
+    public String getOrFetchCsrf() throws Exception {
         Optional<Cookie> checkCookie = getCsrfCookie();
         if (!checkCookie.isPresent()) {
             sendRequest(new InstagramFetchHeadersRequest());
@@ -254,7 +254,7 @@ public class Instagram4j {
      * @throws IOException 
      * @throws ClientProtocolException 
      */
-    public <T> T sendRequest(InstagramRequest<T> request) throws ClientProtocolException, IOException {
+    public <T> T sendRequest(InstagramRequest<T> request) throws Exception {
         
         log.info("Sending request: " + request.getClass().getName());
 
