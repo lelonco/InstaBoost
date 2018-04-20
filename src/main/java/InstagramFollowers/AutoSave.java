@@ -24,7 +24,7 @@ public class AutoSave {
     {
         File settings= new File("Setting");
         ObjectOutputStream os=new ObjectOutputStream(new FileOutputStream(settings));
-        os.writeObject(likeHashTagFeed+";"+ likeFeedUsersHashTag+";"+ follownLike+";"+ delay+";"+ countLikes
+        os.writeObject(likeHashTagFeed+";"+ likeFeedUsersHashTag+";"+ follownLike+";"+ delay/1000+";"+ countLikes
            /*     +";"+ followEnable +";"+ hashTag+";"+ otherHashtags+";"+ coments*/);
 
     }

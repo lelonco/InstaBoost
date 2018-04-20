@@ -2,6 +2,7 @@ package InstagramFollowers;
 
 import javax.swing.*;
 import java.awt.event.*;
+import java.io.IOException;
 
 public class LikesDialog extends JDialog {
     private JPanel contentPane;
@@ -14,7 +15,7 @@ public class LikesDialog extends JDialog {
     private JCheckBox follownLikeCheckbox;
     private JLabel hastagLable;
     private JTextField hastagTextField;
-    private  int delay=1, countLikes=1;
+    private  String delay, countLikes;
     private boolean likeHastagFeed, likeUsersInHashtagFeed, follownLike;
     private String hastag="";
     private InstagramBoster main;
@@ -38,10 +39,29 @@ public class LikesDialog extends JDialog {
     public JCheckBox getFollownLikeCheckbox() {
         return follownLikeCheckbox;
     }
+//    public void setSettings(boolean likeHastagFeed, boolean likeUsersInHashtagFeed, boolean follownLike, String dalay, String countOfLikes)
+//    {
+////        this.likeHastagFeed=likeHastagFeed;
+//////        this.likeUsersInHashtagFeed=likeUsersInHashtagFeed;
+//////        this.follownLike=follownLike;
+//////        this.delay=dalay;
+//////        this.countLikes=countOfLikes ;
+////        likeHashtagFeedCheckbox.setSelected(likeHastagFeed);
+////        likeUsersInHashtagFeedCheckbox.setSelected(likeUsersInHashtagFeed);
+////        follownLikeCheckbox.setSelected(follownLike);
+////        DelayTextField.setText(delay);
+////        countOfLikesForTextField.setText(countLikes);
+//    }
 
-    public LikesDialog(final InstagramBoster main) {
+    public LikesDialog(final InstagramBoster main) throws IOException, ClassNotFoundException {
         this.main=main;
-        //System.exit(0);
+//        System.out.println("Likes Dialog"+Thread.currentThread().getName());
+//        File settings= new File("Setting");
+//        if(settings.exists())
+//        {
+
+//
+//        }
         setSize(450,300);
         setContentPane(contentPane);
         setModal(true);
@@ -126,20 +146,20 @@ public class LikesDialog extends JDialog {
         this.follownLike = follownLike;
     }
 
-    public int getDelay() {
+    public String getDelay() {
         return delay;
     }
 
     public void setDelay(String delay) {
-        this.delay = Integer.parseInt(delay);
+        this.delay = delay;
     }
 
-    public int getCountLikes() {
+    public String getCountLikes() {
         return countLikes;
     }
 
     public void setCountLikes(String countLikes) {
-        this.countLikes = Integer.parseInt(countLikes);
+        this.countLikes = countLikes;
     }
 
     public String getHastag() {

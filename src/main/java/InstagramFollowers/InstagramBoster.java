@@ -28,6 +28,12 @@ public class InstagramBoster extends JFrame {
     private String coments;
     private int delay, countLikes;
     public Instagram4j instagram;
+
+    public LikesDialog getLikesDialog() {
+        return likesDialog;
+    }
+
+    private  LikesDialog likesDialog = new LikesDialog(this);
     private boolean isStarted = false;
 
     public JButton getLoginButton() {
@@ -82,18 +88,15 @@ public class InstagramBoster extends JFrame {
         this.coments = coments;
     }
 
-    public InstagramBoster() {
+    public InstagramBoster() throws IOException, ClassNotFoundException {
 
         StartThread startThread = new StartThread();
         setSize(600, 400);
         setContentPane(InstagramBoster);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         dialog = new VarificationDialog(InstagramBoster.this);
-        FollowDialog followDialog = new FollowDialog(this);
-        CommentDialog comDialog = new CommentDialog(this);
-        LikesDialog likesDialog;
-        likesDialog = new LikesDialog(this);
-
+//        FollowDialog followDialog = new FollowDialog(this);
+//        CommentDialog comDialog = new CommentDialog(this);
         loginButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
                 LoginThread login = new LoginThread();
@@ -106,18 +109,18 @@ public class InstagramBoster extends JFrame {
                 likesDialog.setVisible(true);
             }
         });
-        subscribesButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-                followDialog.setVisible(true);
-            }
-        });
-        comentsButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-                comDialog.setVisible(true);
-            }
-        });
+//        subscribesButton.addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent actionEvent) {
+//                followDialog.setVisible(true);
+//            }
+//        });
+//        comentsButton.addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent actionEvent) {
+//                comDialog.setVisible(true);
+//            }
+//        });
         startButton.addActionListener(new ActionListener() {
             @Override
 
