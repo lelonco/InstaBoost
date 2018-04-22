@@ -3,8 +3,7 @@ package InstagramFollowers;
 import org.brunocvcunha.instagram4j.Instagram4j;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 import java.io.IOException;
 
 public class InstagramBoster extends JFrame {
@@ -136,6 +135,24 @@ public class InstagramBoster extends JFrame {
                     startThread.interrupt();
                 }
 
+            }
+        });
+        loginTextField1.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                super.keyPressed(e);
+                System.out.println("changed");
+                loginButton.setEnabled(true);
+                startButton.setEnabled(false);
+            }
+        });
+        passwordField1.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                super.keyPressed(e);
+                System.out.println("changed");
+                loginButton.setEnabled(true);
+                startButton.setEnabled(false);
             }
         });
     }

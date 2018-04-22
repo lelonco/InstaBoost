@@ -96,6 +96,4 @@
             <version>3.2</version>
         </dependency>
     </dependencies>
-    <pagckaging>jar</pagckaging>
-
 </project>
