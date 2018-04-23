@@ -3,7 +3,10 @@ package InstagramFollowers;
 import org.brunocvcunha.instagram4j.Instagram4j;
 
 import javax.swing.*;
-import java.awt.event.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.io.IOException;
 
 public class InstagramBoster extends JFrame {
@@ -87,8 +90,9 @@ public class InstagramBoster extends JFrame {
         this.coments = coments;
     }
 
-    public InstagramBoster() throws IOException, ClassNotFoundException {
-
+    public InstagramBoster() throws IOException, ClassNotFoundException, IllegalAccessException, UnsupportedLookAndFeelException, InstantiationException {
+//        javax.swing.UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        setResizable(false);
         StartThread startThread = new StartThread();
         setSize(600, 400);
         setContentPane(InstagramBoster);
@@ -124,11 +128,17 @@ public class InstagramBoster extends JFrame {
             @Override
 
             public void actionPerformed(ActionEvent actionEvent) {
-                StartThread startThread = new StartThread();
+                boolean firstTime=true;
+//                StartThread startThread = new StartThread();
                 if (!isStarted) {
                     isStarted = true;
                     startThread.start();
+                    if(!firstTime)
+                    {
+                        StartThread startThread = new StartThread();
+                    }
                     startButton.setText("Stop");
+                    firstTime=false;
                 } else {
                     isStarted = false;
                     startButton.setText("Start");
@@ -141,7 +151,6 @@ public class InstagramBoster extends JFrame {
             @Override
             public void keyPressed(KeyEvent e) {
                 super.keyPressed(e);
-                System.out.println("changed");
                 loginButton.setEnabled(true);
                 startButton.setEnabled(false);
             }
@@ -150,7 +159,6 @@ public class InstagramBoster extends JFrame {
             @Override
             public void keyPressed(KeyEvent e) {
                 super.keyPressed(e);
-                System.out.println("changed");
                 loginButton.setEnabled(true);
                 startButton.setEnabled(false);
             }
@@ -264,5 +272,8 @@ public class InstagramBoster extends JFrame {
 
     public void setInstagram(Instagram4j instagram) {
         this.instagram = instagram;
+    }
+    public JTextArea getLog() {
+        return Log;
     }
 }

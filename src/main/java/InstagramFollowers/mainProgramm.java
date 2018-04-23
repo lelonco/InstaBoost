@@ -7,6 +7,7 @@ import org.brunocvcunha.instagram4j.requests.payload.*;
 import sun.plugin.javascript.navig.Array;
 
 
+import javax.swing.*;
 import java.io.*;
 import java.net.CookieStore;
 import java.text.SimpleDateFormat;
@@ -30,6 +31,23 @@ public class mainProgramm {
     public static int doSubs = 0;
     public static int doCommets = 0;
     public static boolean isHashtag = true;
+    static InstagramBoster app;
+
+    static {
+        try {
+            app = new InstagramBoster();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (UnsupportedLookAndFeelException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        }
+    }
 
     public static long timeToHour()// Час в мілісекундах до початку наступної години
     {
@@ -67,6 +85,7 @@ public class mainProgramm {
                 break;
             }
             System.out.println("Request#" + count);
+            app.getLog().append("\nCount of posts in tag: "+items.size());
             System.out.println("LengthTag" + items.size());
         }
         return items;
@@ -137,6 +156,7 @@ public class mainProgramm {
             InstagramFriendshipStatus status = instagram.sendRequest(new InstagramGetFriendshipRequest(user));
             if (status.followed_by == false) {
                 unfollowList.add(user);
+                app.getLog().append("\nUser not follow u:" + user);
                 System.out.println("User not follow u:" + user);
             }
         }
@@ -206,10 +226,12 @@ public class mainProgramm {
             InstagramLikeResult likeResult = instagram.sendRequest(new InstagramLikeRequest(feedResult));
             if (likeResult.getStatus().equalsIgnoreCase("ok")) {
                 doLikes++;
+                app.getLog().append("\nLiked PostID:" + feedResult);
                 System.out.println("Liked PostID:" + feedResult);
                 Thread.sleep(randomLongBetween(delay, delay + 5));
                 checkLimits();
             } else {
+                app.getLog().append("\nCan not like!");
                 System.out.println("Can not like!");
                 break;
             }
@@ -246,9 +268,11 @@ public class mainProgramm {
                             }
                         }
                     }
+                    app.getLog().append("\nNext user likes:" + count);
                     System.out.println("Next user likes:" + count);
                 }
             } else {
+                app.getLog().append("\nError!");
                 System.out.println("Error!");
                 break;
             }
@@ -261,9 +285,11 @@ public class mainProgramm {
         for (long user : usersId) {
             StatusResult result = instagram.sendRequest(new InstagramUnfollowRequest(user));
             if (result.getStatus().equalsIgnoreCase("ok")) {
+                app.getLog().append("\nUnfollowed:"+user);
                 System.out.println("Ok");
                 doSubs++;
             } else {
+                app.getLog().append("\nErorr!");
                 System.out.println("Not Ok");
             }
         }
@@ -273,6 +299,7 @@ public class mainProgramm {
         for (long user : usersId) {
 
             instagram.sendRequest(new InstagramFollowRequest(user));
+            app.getLog().append("\nFollowed:" + user);
             System.out.println("Followed:" + user);
             Thread.sleep(randomLongBetween(delay, delay + 30));
         }
@@ -282,6 +309,7 @@ public class mainProgramm {
         StatusResult result = instagram.sendRequest(new InstagramFollowRequest(usersId));
         doSubs++;
         checkLimits();
+        app.getLog().append("\nFollowed:" + usersId);
         System.out.println("Followed:" + usersId);
     }
 
@@ -322,7 +350,9 @@ public class mainProgramm {
                 InstagramBoster.showDialog(login, password);
             }
             if (loginRes.getError_type().equalsIgnoreCase("bad_password")) {
+                app.getLog().append("\nPassword icorect");
                 System.out.println("password icorect");
+
             }
         }
         return instagram;
@@ -344,9 +374,11 @@ public class mainProgramm {
         autoSave.autoSaveLogin(instagram, login, pass);
         autoSave.autoSaveSattings(instagram, likeHashTagFeed, likeFeedUsersHashTag, follownLike, delay, countLikes);
         System.out.println("OK");
-        System.out.println("Login" + login + "Pass" + pass + "likeFeed" + likeHashTagFeed + "likeFeed+users" + likeFeedUsersHashTag + "follow+like" + follownLike + "delay" + delay + "count lke " + countLikes);
+        app.getLog().append("\nLogin " + login + "\nPass " + pass + "\nlikeFeed " + likeHashTagFeed + "\nlikeFeed+users " + likeFeedUsersHashTag + "\nfollow+like " + follownLike + "\ndelay " + delay/1000 + "\ncount lke " + countLikes);
+        System.out.println("Login " + login + "Pass " + pass + "likeFeed" + likeHashTagFeed + "likeFeed+users" + likeFeedUsersHashTag + "follow+like" + follownLike + "delay" + delay + "count lke " + countLikes);
         List<String> search = isHashtag(new LoadHashTags().load());
         System.out.println(search);
+        app.getLog().append("\nHashtag "+search);
 //        String [] search={"followme","like4like","followback"};
         /*if(follownLike)
         {
@@ -387,7 +419,6 @@ public class mainProgramm {
     }
 
     public static void main(String[] args) throws Exception {
-        InstagramBoster app = new InstagramBoster();
         AutoLoad autoLoad = new AutoLoad();
         autoLoad.autoLoadLogin(app);
         autoLoad.autoLoadSettings(app/*, settings*/);

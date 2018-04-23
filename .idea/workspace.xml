@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="InstaBooster:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="7936f788-f245-4e19-a72f-0ecc1c31e1ca" name="Default" comment="Added auto save and auto loading settings(not work)">
+    <list default="true" id="7936f788-f245-4e19-a72f-0ecc1c31e1ca" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../InstaBooster/.idea/misc.xml" afterPath="$PROJECT_DIR$/../InstaBooster/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/../InstaBooster/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../InstaBooster/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../InstaBooster/InstaBooster.iml" afterPath="$PROJECT_DIR$/../InstaBooster/InstaBooster.iml" />
+      <change beforePath="$PROJECT_DIR$/../InstaBooster/pom.xml" afterPath="$PROJECT_DIR$/../InstaBooster/pom.xml" />
       <change beforePath="$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/AutoLoad.java" afterPath="$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/AutoLoad.java" />
-      <change beforePath="$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/AutoSave.java" afterPath="$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/AutoSave.java" />
+      <change beforePath="$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/InstagramBoster.form" afterPath="$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/InstagramBoster.form" />
       <change beforePath="$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/InstagramBoster.java" afterPath="$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/InstagramBoster.java" />
-      <change beforePath="$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/LikesDialog.java" afterPath="$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/LikesDialog.java" />
       <change beforePath="$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/mainProgramm.java" afterPath="$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/mainProgramm.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,11 +33,64 @@
       <file leaf-file-name="mainProgramm.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/mainProgramm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="393" column="29" lean-forward="false" selection-start-line="393" selection-start-column="29" selection-end-line="393" selection-end-column="29" />
+            <state relative-caret-position="85">
+              <caret line="87" column="58" lean-forward="false" selection-start-line="87" selection-start-column="58" selection-end-line="87" selection-end-column="58" />
               <folding>
-                <element signature="e#2008#2027#0" expanded="true" />
                 <element signature="method#start#0;class#mainProgramm#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InstagramBoster.form" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/InstagramBoster.form">
+          <provider selected="true" editor-type-id="ui-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InstagramBoster.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/InstagramBoster.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3859">
+              <caret line="274" column="5" lean-forward="false" selection-start-line="274" selection-start-column="5" selection-end-line="274" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3350#3351#0" expanded="true" />
+                <element signature="e#3410#3411#0" expanded="true" />
+                <element signature="e#4742#4985#0" expanded="true" />
+                <element signature="e#4984#4985#0" expanded="true" />
+                <element signature="e#5026#5269#0" expanded="true" />
+                <element signature="e#5268#5269#0" expanded="true" />
+                <element signature="class#StartThread#0;class#InstagramBoster#0" expanded="false" />
+                <element signature="e#7318#7319#0" expanded="true" />
+                <element signature="e#7348#7349#0" expanded="true" />
+                <element signature="e#7404#7405#0" expanded="true" />
+                <element signature="e#7442#7443#0" expanded="true" />
+                <element signature="e#7484#7485#0" expanded="true" />
+                <element signature="e#7522#7523#0" expanded="true" />
+                <element signature="e#7585#7586#0" expanded="true" />
+                <element signature="e#7639#7640#0" expanded="true" />
+                <element signature="e#7686#7687#0" expanded="true" />
+                <element signature="e#7729#7730#0" expanded="true" />
+                <element signature="e#7904#7905#0" expanded="true" />
+                <element signature="e#7938#7939#0" expanded="true" />
+                <element signature="e#7993#7994#0" expanded="true" />
+                <element signature="e#8039#8040#0" expanded="true" />
+                <element signature="e#8068#8069#0" expanded="true" />
+                <element signature="e#8096#8097#0" expanded="true" />
+                <element signature="e#8138#8139#0" expanded="true" />
+                <element signature="e#8190#8191#0" expanded="true" />
+                <element signature="e#8224#8225#0" expanded="true" />
+                <element signature="e#8257#8258#0" expanded="true" />
+                <element signature="e#8309#8310#0" expanded="true" />
+                <element signature="e#8371#8372#0" expanded="true" />
+                <element signature="e#8412#8413#0" expanded="true" />
+                <element signature="e#8444#8445#0" expanded="true" />
+                <element signature="e#8499#8500#0" expanded="true" />
+                <element signature="e#8541#8542#0" expanded="true" />
+                <element signature="e#8573#8574#0" expanded="true" />
+                <element signature="e#8599#8600#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -39,8 +99,8 @@
       <file leaf-file-name="LikesDialog.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/LikesDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+            <state relative-caret-position="136">
+              <caret line="68" column="41" lean-forward="false" selection-start-line="68" selection-start-column="41" selection-end-line="73" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#773#774#0" expanded="true" />
@@ -53,12 +113,8 @@
                 <element signature="e#1116#1117#0" expanded="true" />
                 <element signature="e#1165#1166#0" expanded="true" />
                 <element signature="e#1207#1208#0" expanded="true" />
-                <element signature="e#3254#3382#0" expanded="true" />
-                <element signature="e#3381#3382#0" expanded="true" />
                 <element signature="e#3543#3544#0" expanded="true" />
                 <element signature="e#3585#3586#0" expanded="true" />
-                <element signature="e#3739#3914#0" expanded="true" />
-                <element signature="e#3913#3914#0" expanded="true" />
                 <element signature="e#4167#4168#0" expanded="true" />
                 <element signature="e#4204#4205#0" expanded="true" />
                 <element signature="e#4265#4266#0" expanded="true" />
@@ -86,22 +142,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AutoSave.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/AutoSave.java">
+      <file leaf-file-name="AutoLoad.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/AutoLoad.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="409">
+              <caret line="53" column="5" lean-forward="false" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AutoLoad.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/AutoLoad.java">
+      <file leaf-file-name="Instagram4j.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../InstaBooster/src/main/java/org/brunocvcunha/instagram4j/Instagram4j.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="54" column="1" lean-forward="true" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
-              <folding />
+            <state relative-caret-position="1411">
+              <caret line="121" column="24" lean-forward="false" selection-start-line="121" selection-start-column="24" selection-end-line="121" selection-end-column="24" />
+              <folding>
+                <element signature="method#setup#0;class#Instagram4j#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,6 +177,13 @@
     <findStrings>
       <find>start</find>
       <find>Like</find>
+      <find>con</find>
+      <find>pri</find>
+      <find>print</find>
+      <find>printl</find>
+      <find>append</find>
+      <find>logi</find>
+      <find>count</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -163,10 +228,16 @@
         <option value="$PROJECT_DIR$/src/main/java/InstagramFollowers/AutoLoad.java" />
         <option value="$PROJECT_DIR$/src/main/java/InstagramFollowers/LikesDialog.java" />
         <option value="$PROJECT_DIR$/src/main/java/InstagramFollowers/mainProgramm.java" />
-        <option value="$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/InstagramBoster.java" />
-        <option value="$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/AutoSave.java" />
+        <option value="$PROJECT_DIR$/src/main/java/InstagramFollowers/InstagramBoster.java" />
+        <option value="$PROJECT_DIR$/src/main/java/InstagramFollowers/AutoSave.java" />
+        <option value="$PROJECT_DIR$/src/main/java/InstagramFollowers/AutoLoad.java" />
+        <option value="$PROJECT_DIR$/src/main/java/InstagramFollowers/LikesDialog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/InstagramFollowers/mainProgramm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/AutoLoad.java" />
-        <option value="$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/LikesDialog.java" />
+        <option value="$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/InstagramBoster.java" />
+        <option value="$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/InstagramBoster.form" />
         <option value="$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/mainProgramm.java" />
       </list>
     </option>
@@ -188,6 +259,11 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="InstaBooster" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="InstaBooster" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
       </expand>
@@ -195,8 +271,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="348" />
-    <option name="y" value="40" />
+    <option name="x" value="-11" />
+    <option name="y" value="-10" />
     <option name="width" value="1296" />
     <option name="height" value="1037" />
   </component>
@@ -247,7 +323,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -281,22 +357,152 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="InstagramFollowers" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="InstaBooster" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InstaBooster" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InstaBooster" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InstaBooster" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="instagram4j" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.excludes" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="340" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW" value="true" />
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../InstaBooster/InstaBooster.iml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../InstaBooster/pom.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/InstagramBoster.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -468,7 +674,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523998580524</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added auto save and auto loading settings">
+      <created>1524253573522</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1524253573522</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -486,18 +699,18 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951945" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951945" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951945" sideWeight="0.48058254" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3318078" sideWeight="0.50323623" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951945" sideWeight="0.51941746" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928804" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3318078" sideWeight="0.49676377" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3215103" sideWeight="0.4935275" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951945" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3050162" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31472492" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -518,7 +731,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added auto save and auto loading settings(1 Erorr)" />
     <MESSAGE value="Added auto save and auto loading settings(not work)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added auto save and auto loading settings(not work)" />
+    <MESSAGE value="Added auto save and auto loading settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added auto save and auto loading settings" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -531,54 +745,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/LikesDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#773#774#0" expanded="true" />
-            <element signature="e#819#820#0" expanded="true" />
-            <element signature="e#879#880#0" expanded="true" />
-            <element signature="e#932#933#0" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1014#1015#0" expanded="true" />
-            <element signature="e#1069#1070#0" expanded="true" />
-            <element signature="e#1116#1117#0" expanded="true" />
-            <element signature="e#1165#1166#0" expanded="true" />
-            <element signature="e#1207#1208#0" expanded="true" />
-            <element signature="e#3254#3382#0" expanded="true" />
-            <element signature="e#3381#3382#0" expanded="true" />
-            <element signature="e#3543#3544#0" expanded="true" />
-            <element signature="e#3585#3586#0" expanded="true" />
-            <element signature="e#3739#3914#0" expanded="true" />
-            <element signature="e#3913#3914#0" expanded="true" />
-            <element signature="e#4167#4168#0" expanded="true" />
-            <element signature="e#4204#4205#0" expanded="true" />
-            <element signature="e#4265#4266#0" expanded="true" />
-            <element signature="e#4317#4318#0" expanded="true" />
-            <element signature="e#4366#4367#0" expanded="true" />
-            <element signature="e#4411#4412#0" expanded="true" />
-            <element signature="e#4594#4595#0" expanded="true" />
-            <element signature="e#4628#4629#0" expanded="true" />
-            <element signature="e#4683#4684#0" expanded="true" />
-            <element signature="e#4729#4730#0" expanded="true" />
-            <element signature="e#4761#4762#0" expanded="true" />
-            <element signature="e#4789#4790#0" expanded="true" />
-            <element signature="e#4831#4832#0" expanded="true" />
-            <element signature="e#4865#4866#0" expanded="true" />
-            <element signature="e#4902#4903#0" expanded="true" />
-            <element signature="e#4935#4936#0" expanded="true" />
-            <element signature="e#4987#4988#0" expanded="true" />
-            <element signature="e#5031#5032#0" expanded="true" />
-            <element signature="e#5064#5065#0" expanded="true" />
-            <element signature="e#5093#5094#0" expanded="true" />
-            <element signature="e#5137#5138#0" expanded="true" />
-            <element signature="e#5173#5174#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../InstaBooster/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -771,13 +937,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../InstaBooster/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="81" column="21" lean-forward="false" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/CommentDialog.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
@@ -797,16 +956,6 @@
             <element signature="e#477#478#0" expanded="false" />
             <element signature="e#539#540#0" expanded="false" />
             <element signature="e#584#585#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../InstaBooster/src/main/java/org/brunocvcunha/instagram4j/Instagram4j.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3825">
-          <caret line="239" column="23" lean-forward="false" selection-start-line="239" selection-start-column="23" selection-end-line="239" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -850,11 +999,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/f.form" />
     <entry file="file://$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/f.java" />
-    <entry file="file://$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/InstagramBoster.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/LikesDialog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -871,12 +1015,8 @@
             <element signature="e#1116#1117#0" expanded="true" />
             <element signature="e#1165#1166#0" expanded="true" />
             <element signature="e#1207#1208#0" expanded="true" />
-            <element signature="e#3254#3382#0" expanded="true" />
-            <element signature="e#3381#3382#0" expanded="true" />
             <element signature="e#3543#3544#0" expanded="true" />
             <element signature="e#3585#3586#0" expanded="true" />
-            <element signature="e#3739#3914#0" expanded="true" />
-            <element signature="e#3913#3914#0" expanded="true" />
             <element signature="e#4167#4168#0" expanded="true" />
             <element signature="e#4204#4205#0" expanded="true" />
             <element signature="e#4265#4266#0" expanded="true" />
@@ -929,46 +1069,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/InstagramBoster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-          <folding>
-            <element signature="e#1034#1035#0" expanded="true" />
-            <element signature="e#1068#1069#0" expanded="true" />
-            <element signature="e#3084#3085#0" expanded="true" />
-            <element signature="e#3144#3145#0" expanded="true" />
-            <element signature="class#StartThread#0;class#InstagramBoster#0" expanded="false" />
-            <element signature="e#6256#6257#0" expanded="true" />
-            <element signature="e#6286#6287#0" expanded="true" />
-            <element signature="e#6342#6343#0" expanded="true" />
-            <element signature="e#6380#6381#0" expanded="true" />
-            <element signature="e#6422#6423#0" expanded="true" />
-            <element signature="e#6460#6461#0" expanded="true" />
-            <element signature="e#6523#6524#0" expanded="true" />
-            <element signature="e#6577#6578#0" expanded="true" />
-            <element signature="e#6624#6625#0" expanded="true" />
-            <element signature="e#6667#6668#0" expanded="true" />
-            <element signature="e#6842#6843#0" expanded="true" />
-            <element signature="e#6876#6877#0" expanded="true" />
-            <element signature="e#6931#6932#0" expanded="true" />
-            <element signature="e#6977#6978#0" expanded="true" />
-            <element signature="e#7006#7007#0" expanded="true" />
-            <element signature="e#7034#7035#0" expanded="true" />
-            <element signature="e#7076#7077#0" expanded="true" />
-            <element signature="e#7128#7129#0" expanded="true" />
-            <element signature="e#7162#7163#0" expanded="true" />
-            <element signature="e#7195#7196#0" expanded="true" />
-            <element signature="e#7247#7248#0" expanded="true" />
-            <element signature="e#7309#7310#0" expanded="true" />
-            <element signature="e#7350#7351#0" expanded="true" />
-            <element signature="e#7382#7383#0" expanded="true" />
-            <element signature="e#7437#7438#0" expanded="true" />
-            <element signature="e#7479#7480#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/LoadHashTags.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -977,10 +1077,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/AutoLoad.java">
+    <entry file="file://$PROJECT_DIR$/../InstaBooster/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="54" column="1" lean-forward="true" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
+        <state relative-caret-position="148">
+          <caret line="77" column="21" lean-forward="false" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../InstaBooster/src/main/java/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -988,15 +1096,15 @@
     <entry file="file://$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/AutoSave.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/LikesDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+        <state relative-caret-position="136">
+          <caret line="68" column="41" lean-forward="false" selection-start-line="68" selection-start-column="41" selection-end-line="73" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#773#774#0" expanded="true" />
@@ -1009,12 +1117,8 @@
             <element signature="e#1116#1117#0" expanded="true" />
             <element signature="e#1165#1166#0" expanded="true" />
             <element signature="e#1207#1208#0" expanded="true" />
-            <element signature="e#3254#3382#0" expanded="true" />
-            <element signature="e#3381#3382#0" expanded="true" />
             <element signature="e#3543#3544#0" expanded="true" />
             <element signature="e#3585#3586#0" expanded="true" />
-            <element signature="e#3739#3914#0" expanded="true" />
-            <element signature="e#3913#3914#0" expanded="true" />
             <element signature="e#4167#4168#0" expanded="true" />
             <element signature="e#4204#4205#0" expanded="true" />
             <element signature="e#4265#4266#0" expanded="true" />
@@ -1041,12 +1145,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/AutoLoad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="53" column="5" lean-forward="false" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../InstaBooster/src/main/java/org/brunocvcunha/instagram4j/Instagram4j.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1411">
+          <caret line="121" column="24" lean-forward="false" selection-start-line="121" selection-start-column="24" selection-end-line="121" selection-end-column="24" />
+          <folding>
+            <element signature="method#setup#0;class#Instagram4j#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/InstagramBoster.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/InstagramBoster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3859">
+          <caret line="274" column="5" lean-forward="false" selection-start-line="274" selection-start-column="5" selection-end-line="274" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3350#3351#0" expanded="true" />
+            <element signature="e#3410#3411#0" expanded="true" />
+            <element signature="e#4742#4985#0" expanded="true" />
+            <element signature="e#4984#4985#0" expanded="true" />
+            <element signature="e#5026#5269#0" expanded="true" />
+            <element signature="e#5268#5269#0" expanded="true" />
+            <element signature="class#StartThread#0;class#InstagramBoster#0" expanded="false" />
+            <element signature="e#7318#7319#0" expanded="true" />
+            <element signature="e#7348#7349#0" expanded="true" />
+            <element signature="e#7404#7405#0" expanded="true" />
+            <element signature="e#7442#7443#0" expanded="true" />
+            <element signature="e#7484#7485#0" expanded="true" />
+            <element signature="e#7522#7523#0" expanded="true" />
+            <element signature="e#7585#7586#0" expanded="true" />
+            <element signature="e#7639#7640#0" expanded="true" />
+            <element signature="e#7686#7687#0" expanded="true" />
+            <element signature="e#7729#7730#0" expanded="true" />
+            <element signature="e#7904#7905#0" expanded="true" />
+            <element signature="e#7938#7939#0" expanded="true" />
+            <element signature="e#7993#7994#0" expanded="true" />
+            <element signature="e#8039#8040#0" expanded="true" />
+            <element signature="e#8068#8069#0" expanded="true" />
+            <element signature="e#8096#8097#0" expanded="true" />
+            <element signature="e#8138#8139#0" expanded="true" />
+            <element signature="e#8190#8191#0" expanded="true" />
+            <element signature="e#8224#8225#0" expanded="true" />
+            <element signature="e#8257#8258#0" expanded="true" />
+            <element signature="e#8309#8310#0" expanded="true" />
+            <element signature="e#8371#8372#0" expanded="true" />
+            <element signature="e#8412#8413#0" expanded="true" />
+            <element signature="e#8444#8445#0" expanded="true" />
+            <element signature="e#8499#8500#0" expanded="true" />
+            <element signature="e#8541#8542#0" expanded="true" />
+            <element signature="e#8573#8574#0" expanded="true" />
+            <element signature="e#8599#8600#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../InstaBooster/src/main/java/InstagramFollowers/mainProgramm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="393" column="29" lean-forward="false" selection-start-line="393" selection-start-column="29" selection-end-line="393" selection-end-column="29" />
+        <state relative-caret-position="85">
+          <caret line="87" column="58" lean-forward="false" selection-start-line="87" selection-start-column="58" selection-end-line="87" selection-end-column="58" />
           <folding>
-            <element signature="e#2008#2027#0" expanded="true" />
             <element signature="method#start#0;class#mainProgramm#0" expanded="false" />
           </folding>
         </state>
@@ -1058,10 +1229,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>InstaBooster:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

@@ -9,8 +9,6 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 
 public class AutoLoad {
-    Instagram4j instagram;
-
     public void autoLoadLogin(InstagramBoster app/*,File loadLogin,File loadCoockie*/) throws IOException, ClassNotFoundException {
         File loadCoockie = new File(System.getProperty("user.dir"), "Coockie");
         File loadLogin = new File(System.getProperty("user.dir"), "Login");
@@ -35,21 +33,23 @@ public class AutoLoad {
             app.setInstagram(instagram);
         }
     }
-
     public void autoLoadSettings( InstagramBoster main/*LikesDialog likesDialog*/) throws IOException, ClassNotFoundException {
         File settings= new File("Setting");
         if(settings.exists()) {
             ObjectInputStream ois = new ObjectInputStream(new FileInputStream(settings));
             String settingsStr = (String) ois.readObject();
             String[] arrSetting = settingsStr.split(";");
-            System.out.println(arrSetting.length);
-            System.out.println(Boolean.parseBoolean(arrSetting[0]) + Thread.currentThread().getName());
-            System.out.print(Thread.currentThread().getName());
             main.getLikesDialog().getLikeHashtagFeedCheckbox().setSelected(Boolean.parseBoolean(arrSetting[0]));
             main.getLikesDialog().getLikeUsersInHashtagFeedCheckbox().setSelected(Boolean.parseBoolean(arrSetting[1]));
             main.getLikesDialog().getFollownLikeCheckbox().setSelected(Boolean.parseBoolean(arrSetting[2]));
             main.getLikesDialog().getDelayTextField().setText(arrSetting[3]);
             main.getLikesDialog().getCountOfLikesForTextField().setText(arrSetting[4]);
+        /***************************SET PARAMETERS FOR MAIN ***************************/
+            main.setLikeHashTagFeed(Boolean.parseBoolean(arrSetting[0]));
+            main.setLikeFeedUsersHashTag(Boolean.parseBoolean(arrSetting[1]));
+            main.setFollownLike(Boolean.parseBoolean(arrSetting[2]));
+            main.setDelay(arrSetting[3]);
+            main.setCountLikes(arrSetting[4]);
         }
     }
 }
