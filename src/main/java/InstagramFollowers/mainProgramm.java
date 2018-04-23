@@ -368,8 +368,6 @@ public class mainProgramm {
     public void start(Instagram4j instagram, String login, String pass, boolean likeHashTagFeed, boolean likeFeedUsersHashTag, boolean follownLike, int delay, int countLikes,
             /*boolean followEnable*/String hashTag
             /*     boolean comentsEnable ,boolean otherHashtags,*//* String hashTag,*//* String coments*/) throws Exception {
-       /* Instagram4j instagram = Instagram4j.builder().username(login).password(pass).build();
-        instagram.setup();*/
         AutoSave autoSave = new AutoSave();
         autoSave.autoSaveLogin(instagram, login, pass);
         autoSave.autoSaveSattings(instagram, likeHashTagFeed, likeFeedUsersHashTag, follownLike, delay, countLikes);
@@ -379,11 +377,7 @@ public class mainProgramm {
         List<String> search = isHashtag(new LoadHashTags().load());
         System.out.println(search);
         app.getLog().append("\nHashtag "+search);
-//        String [] search={"followme","like4like","followback"};
-        /*if(follownLike)
-        {
-            followAndLikePreparation(instagram,search,countLikes,delay);
-        }*/
+        new AutopostingThread(instagram).start();
         if (likeHashTagFeed) {
             if (likeFeedUsersHashTag) {
                 likeTagFeedAndUser(instagram, search, countLikes, delay, follownLike);
@@ -404,7 +398,6 @@ public class mainProgramm {
             }
             //if()
         }
-        //  new AutopostingThread(instagram).start();
        /* if(followEnable)
         {
 

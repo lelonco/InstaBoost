@@ -11,19 +11,8 @@ import java.util.List;
 import java.util.Objects;
 
 public class Autoposting {
-  /*  private   Instagram4j instagram
-    Autoposting(Instagram4j instagram4j)
-    {
-        this.instagram=instagram4j;
-    }*/
 
     public void start(Instagram4j instagram) throws Exception {
-//        String login, passWord;
-//        login ="2disreal";
-//        passWord ="987456987";
-//        Instagram4j instagram = Instagram4j.builder().username(login).password(passWord).build();
-//        instagram.setup();
-//        instagram.login();
         String path=System.getProperty("user.dir")+"/Фотографии сообщества/";
         File pathFile= new File(System.getProperty("user.dir")+"/Фотографии сообщества");
         List<String> str=GetAllFiles(pathFile);
@@ -55,13 +44,13 @@ public class Autoposting {
         file.renameTo(pathFile);
     }
     public void PostPhoto(Instagram4j instagram,String photoName,String description) throws Exception {
+        Thread.sleep(new mainProgramm().timeToHour());
         File photo=new File(photoName);
        InstagramConfigurePhotoResult postResult=instagram.sendRequest(new InstagramUploadPhotoRequest(photo,description));
        if(postResult.getUpload_id()!=null)
        {
            MoveFile(photo);
        }
-       Thread.sleep((1*1000)*1800);
     }
 }
 class AutopostingThread extends Thread
@@ -69,7 +58,13 @@ class AutopostingThread extends Thread
     Instagram4j instagram;
     AutopostingThread(Instagram4j instagram)
     {
-     this.instagram=instagram;
+        this.instagram = Instagram4j.builder().username(instagram.getUsername())
+                .password(instagram.getPassword())
+                .uuid(instagram.getUuid())
+                .cookieStore(instagram.getCookieStore())
+                .build();
+        instagram.setup();
+        this.instagram=instagram;
     }
     public void run()
     {
